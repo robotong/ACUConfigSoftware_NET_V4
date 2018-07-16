@@ -74,7 +74,51 @@ namespace ACUConfig_NETVer4
                         RelayConfig1.Baud = Convert.ToUInt16(this.textBoxBaud.Text);
                         RelayConfig1.Polar = Convert.ToUInt16(this.comboBoxPolar.SelectedIndex);
                         RelayConfig1.InputNum = Convert.ToUInt16(this.comboBoxInputNum.SelectedIndex);
-                        
+
+                        if (this.checkBoxDataON1.CheckState == CheckState.Checked)
+                        {
+                            RelayConfig1.DataON1 = 1;
+                        }
+                        else
+                        {
+                            RelayConfig1.DataON1 = 0;
+                        }
+
+                        if (this.checkBoxDataON2.CheckState == CheckState.Checked)
+                        {
+                            RelayConfig1.DataON2 = 1;
+                        }
+                        else
+                        {
+                            RelayConfig1.DataON2 = 0;
+                        }
+
+                        if (this.checkBoxDataON3.CheckState == CheckState.Checked)
+                        {
+                            RelayConfig1.DataON3 = 1;
+                        }
+                        else
+                        {
+                            RelayConfig1.DataON3 = 0;
+                        }
+
+                        if (this.checkBoxDataON4.CheckState == CheckState.Checked)
+                        {
+                            RelayConfig1.DataON4 = 1;
+                        }
+                        else
+                        {
+                            RelayConfig1.DataON4 = 0;
+                        }
+
+                        RelayConfig1.WhichSensor1 = this.comboBoxWhichSensor1.SelectedIndex;
+                        RelayConfig1.WhichData1 = this.comboBoxWhichData1.SelectedIndex;
+                        RelayConfig1.WhichSensor2 = this.comboBoxWhichSensor2.SelectedIndex;
+                        RelayConfig1.WhichData2 = this.comboBoxWhichData2.SelectedIndex;
+                        RelayConfig1.WhichSensor3 = this.comboBoxWhichSensor3.SelectedIndex;
+                        RelayConfig1.WhichData3 = this.comboBoxWhichData3.SelectedIndex;
+                        RelayConfig1.WhichSensor4 = this.comboBoxWhichSensor4.SelectedIndex;
+                        RelayConfig1.WhichData4 = this.comboBoxWhichData4.SelectedIndex;
 
                         Master.WriteMulitipleRegisters(add, RelayConfig1.GetArray());
 
@@ -99,8 +143,55 @@ namespace ACUConfig_NETVer4
             this.comboBoxInputNum.SelectedIndex = RelayConfig1.InputNum;
             this.comboBoxMode.SelectedIndex = RelayConfig1.Mode;
             this.comboBoxPolar.SelectedIndex = RelayConfig1.Polar;
-            this.comboBoxWitchDataH.SelectedIndex = RelayConfig1.WitchDataH;
-            this.comboBoxWhichDataL.SelectedIndex = RelayConfig1.WitchDataL;
+          //  this.comboBoxWitchDataH.SelectedIndex = RelayConfig1.WitchDataH;
+          //  this.comboBoxWhichDataL.SelectedIndex = RelayConfig1.WitchDataL;
+
+            this.comboBoxWhichSensor1.SelectedIndex = RelayConfig1.WhichSensor1;
+            this.comboBoxWhichData1.SelectedIndex = RelayConfig1.WhichData1;
+            if (RelayConfig1.DataON1 == 1)
+            {
+                this.checkBoxDataON1.CheckState = CheckState.Checked;
+            }
+            else
+            {
+                this.checkBoxDataON1.CheckState = CheckState.Unchecked;
+            }
+
+            this.comboBoxWhichSensor2.SelectedIndex = RelayConfig1.WhichSensor2;
+            this.comboBoxWhichData2.SelectedIndex = RelayConfig1.WhichData2;
+            if (RelayConfig1.DataON2 == 1)
+            {
+                this.checkBoxDataON2.CheckState = CheckState.Checked;
+            }
+            else
+            {
+                this.checkBoxDataON2.CheckState = CheckState.Unchecked;
+            }
+
+            this.comboBoxWhichSensor3.SelectedIndex = RelayConfig1.WhichSensor3;
+            this.comboBoxWhichData3.SelectedIndex = RelayConfig1.WhichData3;
+            if (RelayConfig1.DataON3 == 1)
+            {
+                this.checkBoxDataON3.CheckState = CheckState.Checked;
+            }
+            else
+            {
+                this.checkBoxDataON3.CheckState = CheckState.Unchecked;
+            }
+
+            this.comboBoxWhichSensor4.SelectedIndex = RelayConfig1.WhichSensor4;
+            this.comboBoxWhichData4.SelectedIndex = RelayConfig1.WhichData4;
+            if (RelayConfig1.DataON4 == 1)
+            {
+                this.checkBoxDataON4.CheckState = CheckState.Checked;
+            }
+            else
+            {
+                this.checkBoxDataON4.CheckState = CheckState.Unchecked;
+            }
+
+            
+
             if (RelayConfig1.Status)
                 this.textBoxStatus.Text = "导通";
             else
@@ -183,6 +274,20 @@ namespace ACUConfig_NETVer4
         /// 数据号
         /// </summary>
         public int WitchDataL;
+
+        public int WhichSensor1;
+        public int WhichData1;
+        public int WhichSensor2;
+        public int WhichData2;
+        public int WhichSensor3;
+        public int WhichData3;
+        public int WhichSensor4;
+        public int WhichData4;
+        public int DataON1;
+        public int DataON2;
+        public int DataON3;
+        public int DataON4;
+
         public UInt16 Baud;
         public UInt16 Polar;
         public UInt16 InputNum;
@@ -200,8 +305,13 @@ namespace ACUConfig_NETVer4
             result[0] = this.Mode;
             result[1] = this.LimitUp;
             result[2] = this.LimitDown;
-            result[3] = this.Baud;
-            result[4] = Convert.ToUInt16(this.WitchDataH << 8 + this.WitchDataL);
+            //result[3] = this.Baud;
+            //result[4] = Convert.ToUInt16(this.WitchDataH << 8 + this.WitchDataL);
+
+            //result[3] = Convert.ToUInt16((this.WhichSensor2 << 11) + (this.WhichData2 << 9) + (this.DataON2 << 8) + (this.WhichSensor1 << 3) + (this.WhichData1 << 1) + this.DataON1);
+            result[3] = Convert.ToUInt16((this.WhichSensor2 << 11) + (this.WhichData2 << 9) + (this.DataON2 << 8) + (this.WhichSensor1 << 3) + (this.WhichData1 << 1) + this.DataON1);
+            result[4] = Convert.ToUInt16((this.WhichSensor4 << 11) + (this.WhichData4 << 9) + (this.DataON4 << 8) + (this.WhichSensor3 << 3) + (this.WhichData3 << 1) + this.DataON3);
+
             result[5] = this.Polar;
             result[6] = this.InputNum;
 
@@ -214,8 +324,25 @@ namespace ACUConfig_NETVer4
             this.LimitUp = array[1];
             this.LimitDown = array[2];
             this.Baud = array[3];
-            this.WitchDataH = (Convert.ToInt32(array[4]) >> 8) & 0xff;
-            this.WitchDataL = (Convert.ToInt32(array[4])) & 0xff;
+            //this.WitchDataH = (Convert.ToInt32(array[4]) >> 8) & 0xff;
+            //this.WitchDataL = (Convert.ToInt32(array[4])) & 0xff;
+
+            this.WhichSensor1 = (Convert.ToInt32(array[3]) >> 3) & 0x1F;
+            this.WhichData1 = (Convert.ToInt32(array[3]) >> 1) & 0x03;
+            this.DataON1 = (Convert.ToInt32(array[3]) ) & 0x01;
+
+            this.WhichSensor2 = (Convert.ToInt32(array[3]) >> 11) & 0x1F;
+            this.WhichData2 = (Convert.ToInt32(array[3]) >> 9) & 0x03;
+            this.DataON2 = (Convert.ToInt32(array[3] >> 8)) & 0x01;
+
+            this.WhichSensor3 = (Convert.ToInt32(array[4]) >> 3) & 0x1F;
+            this.WhichData3 = (Convert.ToInt32(array[4]) >> 1) & 0x03;
+            this.DataON3 = (Convert.ToInt32(array[4])) & 0x01;
+
+            this.WhichSensor4 = (Convert.ToInt32(array[4]) >> 11) & 0x1F;
+            this.WhichData4 = (Convert.ToInt32(array[4]) >> 9) & 0x03;
+            this.DataON4 = (Convert.ToInt32(array[4]) >> 8) & 0x01;
+
             this.Polar = array[5];
             this.InputNum = array[5];
             this.Status = ((int)array[7]) != 0;

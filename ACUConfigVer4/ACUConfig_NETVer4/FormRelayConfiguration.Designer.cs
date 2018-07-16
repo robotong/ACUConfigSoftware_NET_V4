@@ -32,22 +32,24 @@
             this.comboBoxRelayAddr = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBoxData4Enable = new System.Windows.Forms.CheckBox();
-            this.checkBoxData3Enable = new System.Windows.Forms.CheckBox();
-            this.checkBoxData2Enable = new System.Windows.Forms.CheckBox();
-            this.checkBoxData1Enable = new System.Windows.Forms.CheckBox();
+            this.comboBoxWhichData1 = new System.Windows.Forms.ComboBox();
+            this.checkBoxDataON4 = new System.Windows.Forms.CheckBox();
+            this.comboBoxWhichSensor1 = new System.Windows.Forms.ComboBox();
+            this.checkBoxDataON3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDataON2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDataON1 = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWhichData4 = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWhichSensor4 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWhichData2 = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWhichSensor2 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWhichData3 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWhichSensor3 = new System.Windows.Forms.ComboBox();
             this.textBoxStatus = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -114,22 +116,24 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.checkBoxData4Enable);
-            this.groupBox1.Controls.Add(this.checkBoxData3Enable);
-            this.groupBox1.Controls.Add(this.checkBoxData2Enable);
-            this.groupBox1.Controls.Add(this.checkBoxData1Enable);
+            this.groupBox1.Controls.Add(this.comboBoxWhichData1);
+            this.groupBox1.Controls.Add(this.checkBoxDataON4);
+            this.groupBox1.Controls.Add(this.comboBoxWhichSensor1);
+            this.groupBox1.Controls.Add(this.checkBoxDataON3);
+            this.groupBox1.Controls.Add(this.checkBoxDataON2);
+            this.groupBox1.Controls.Add(this.checkBoxDataON1);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.comboBox5);
+            this.groupBox1.Controls.Add(this.comboBoxWhichData4);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.comboBox6);
+            this.groupBox1.Controls.Add(this.comboBoxWhichSensor4);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.comboBoxWhichData2);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.comboBoxWhichSensor2);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBoxWhichData3);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBoxWhichSensor3);
             this.groupBox1.Controls.Add(this.textBoxStatus);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
@@ -158,46 +162,102 @@
             this.groupBox1.Text = "参数配置";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // checkBoxData4Enable
+            // comboBoxWhichData1
             // 
-            this.checkBoxData4Enable.AutoSize = true;
-            this.checkBoxData4Enable.Location = new System.Drawing.Point(563, 100);
-            this.checkBoxData4Enable.Name = "checkBoxData4Enable";
-            this.checkBoxData4Enable.Size = new System.Drawing.Size(78, 16);
-            this.checkBoxData4Enable.TabIndex = 38;
-            this.checkBoxData4Enable.Text = "使能数据4";
-            this.checkBoxData4Enable.UseVisualStyleBackColor = true;
+            this.comboBoxWhichData1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichData1.FormattingEnabled = true;
+            this.comboBoxWhichData1.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
+            this.comboBoxWhichData1.Location = new System.Drawing.Point(439, 68);
+            this.comboBoxWhichData1.Name = "comboBoxWhichData1";
+            this.comboBoxWhichData1.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichData1.TabIndex = 24;
             // 
-            // checkBoxData3Enable
+            // checkBoxDataON4
             // 
-            this.checkBoxData3Enable.AutoSize = true;
-            this.checkBoxData3Enable.Location = new System.Drawing.Point(381, 100);
-            this.checkBoxData3Enable.Name = "checkBoxData3Enable";
-            this.checkBoxData3Enable.Size = new System.Drawing.Size(78, 16);
-            this.checkBoxData3Enable.TabIndex = 37;
-            this.checkBoxData3Enable.Text = "使能数据3";
-            this.checkBoxData3Enable.UseVisualStyleBackColor = true;
+            this.checkBoxDataON4.AutoSize = true;
+            this.checkBoxDataON4.Location = new System.Drawing.Point(563, 100);
+            this.checkBoxDataON4.Name = "checkBoxDataON4";
+            this.checkBoxDataON4.Size = new System.Drawing.Size(78, 16);
+            this.checkBoxDataON4.TabIndex = 38;
+            this.checkBoxDataON4.Text = "使能数据4";
+            this.checkBoxDataON4.UseVisualStyleBackColor = true;
             // 
-            // checkBoxData2Enable
+            // comboBoxWhichSensor1
             // 
-            this.checkBoxData2Enable.AutoSize = true;
-            this.checkBoxData2Enable.Location = new System.Drawing.Point(563, 20);
-            this.checkBoxData2Enable.Name = "checkBoxData2Enable";
-            this.checkBoxData2Enable.Size = new System.Drawing.Size(78, 16);
-            this.checkBoxData2Enable.TabIndex = 36;
-            this.checkBoxData2Enable.Text = "使能数据2";
-            this.checkBoxData2Enable.UseVisualStyleBackColor = true;
+            this.comboBoxWhichSensor1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichSensor1.FormattingEnabled = true;
+            this.comboBoxWhichSensor1.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBoxWhichSensor1.Location = new System.Drawing.Point(439, 42);
+            this.comboBoxWhichSensor1.Name = "comboBoxWhichSensor1";
+            this.comboBoxWhichSensor1.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichSensor1.TabIndex = 23;
             // 
-            // checkBoxData1Enable
+            // checkBoxDataON3
             // 
-            this.checkBoxData1Enable.AutoSize = true;
-            this.checkBoxData1Enable.Location = new System.Drawing.Point(381, 20);
-            this.checkBoxData1Enable.Name = "checkBoxData1Enable";
-            this.checkBoxData1Enable.Size = new System.Drawing.Size(78, 16);
-            this.checkBoxData1Enable.TabIndex = 35;
-            this.checkBoxData1Enable.Text = "使能数据1";
-            this.checkBoxData1Enable.UseVisualStyleBackColor = true;
-            this.checkBoxData1Enable.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBoxDataON3.AutoSize = true;
+            this.checkBoxDataON3.Location = new System.Drawing.Point(381, 100);
+            this.checkBoxDataON3.Name = "checkBoxDataON3";
+            this.checkBoxDataON3.Size = new System.Drawing.Size(78, 16);
+            this.checkBoxDataON3.TabIndex = 37;
+            this.checkBoxDataON3.Text = "使能数据3";
+            this.checkBoxDataON3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDataON2
+            // 
+            this.checkBoxDataON2.AutoSize = true;
+            this.checkBoxDataON2.Location = new System.Drawing.Point(563, 20);
+            this.checkBoxDataON2.Name = "checkBoxDataON2";
+            this.checkBoxDataON2.Size = new System.Drawing.Size(78, 16);
+            this.checkBoxDataON2.TabIndex = 36;
+            this.checkBoxDataON2.Text = "使能数据2";
+            this.checkBoxDataON2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDataON1
+            // 
+            this.checkBoxDataON1.AutoSize = true;
+            this.checkBoxDataON1.Location = new System.Drawing.Point(381, 20);
+            this.checkBoxDataON1.Name = "checkBoxDataON1";
+            this.checkBoxDataON1.Size = new System.Drawing.Size(78, 16);
+            this.checkBoxDataON1.TabIndex = 35;
+            this.checkBoxDataON1.Text = "使能数据1";
+            this.checkBoxDataON1.UseVisualStyleBackColor = true;
+            this.checkBoxDataON1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label16
             // 
@@ -208,19 +268,19 @@
             this.label16.TabIndex = 34;
             this.label16.Text = "数据号";
             // 
-            // comboBox5
+            // comboBoxWhichData4
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.comboBoxWhichData4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichData4.FormattingEnabled = true;
+            this.comboBoxWhichData4.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3"});
-            this.comboBox5.Location = new System.Drawing.Point(620, 148);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(100, 20);
-            this.comboBox5.TabIndex = 33;
+            this.comboBoxWhichData4.Location = new System.Drawing.Point(620, 148);
+            this.comboBoxWhichData4.Name = "comboBoxWhichData4";
+            this.comboBoxWhichData4.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichData4.TabIndex = 33;
             // 
             // label17
             // 
@@ -231,11 +291,11 @@
             this.label17.TabIndex = 32;
             this.label17.Text = "传感器号";
             // 
-            // comboBox6
+            // comboBoxWhichSensor4
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.comboBoxWhichSensor4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichSensor4.FormattingEnabled = true;
+            this.comboBoxWhichSensor4.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -268,10 +328,10 @@
             "29",
             "30",
             "31"});
-            this.comboBox6.Location = new System.Drawing.Point(620, 122);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(100, 20);
-            this.comboBox6.TabIndex = 31;
+            this.comboBoxWhichSensor4.Location = new System.Drawing.Point(620, 122);
+            this.comboBoxWhichSensor4.Name = "comboBoxWhichSensor4";
+            this.comboBoxWhichSensor4.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichSensor4.TabIndex = 31;
             // 
             // label14
             // 
@@ -282,19 +342,19 @@
             this.label14.TabIndex = 30;
             this.label14.Text = "数据号";
             // 
-            // comboBox3
+            // comboBoxWhichData2
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxWhichData2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichData2.FormattingEnabled = true;
+            this.comboBoxWhichData2.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3"});
-            this.comboBox3.Location = new System.Drawing.Point(620, 68);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 20);
-            this.comboBox3.TabIndex = 29;
+            this.comboBoxWhichData2.Location = new System.Drawing.Point(620, 68);
+            this.comboBoxWhichData2.Name = "comboBoxWhichData2";
+            this.comboBoxWhichData2.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichData2.TabIndex = 29;
             // 
             // label15
             // 
@@ -305,11 +365,11 @@
             this.label15.TabIndex = 28;
             this.label15.Text = "传感器号";
             // 
-            // comboBox4
+            // comboBoxWhichSensor2
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.comboBoxWhichSensor2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichSensor2.FormattingEnabled = true;
+            this.comboBoxWhichSensor2.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -342,10 +402,10 @@
             "29",
             "30",
             "31"});
-            this.comboBox4.Location = new System.Drawing.Point(620, 42);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(100, 20);
-            this.comboBox4.TabIndex = 27;
+            this.comboBoxWhichSensor2.Location = new System.Drawing.Point(620, 42);
+            this.comboBoxWhichSensor2.Name = "comboBoxWhichSensor2";
+            this.comboBoxWhichSensor2.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichSensor2.TabIndex = 27;
             // 
             // label12
             // 
@@ -356,19 +416,19 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "数据号";
             // 
-            // comboBox1
+            // comboBoxWhichData3
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxWhichData3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichData3.FormattingEnabled = true;
+            this.comboBoxWhichData3.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
             "3"});
-            this.comboBox1.Location = new System.Drawing.Point(438, 148);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 20);
-            this.comboBox1.TabIndex = 25;
+            this.comboBoxWhichData3.Location = new System.Drawing.Point(438, 148);
+            this.comboBoxWhichData3.Name = "comboBoxWhichData3";
+            this.comboBoxWhichData3.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichData3.TabIndex = 25;
             // 
             // label13
             // 
@@ -379,11 +439,11 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "传感器号";
             // 
-            // comboBox2
+            // comboBoxWhichSensor3
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxWhichSensor3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWhichSensor3.FormattingEnabled = true;
+            this.comboBoxWhichSensor3.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -416,10 +476,10 @@
             "29",
             "30",
             "31"});
-            this.comboBox2.Location = new System.Drawing.Point(438, 122);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 20);
-            this.comboBox2.TabIndex = 23;
+            this.comboBoxWhichSensor3.Location = new System.Drawing.Point(438, 122);
+            this.comboBoxWhichSensor3.Name = "comboBoxWhichSensor3";
+            this.comboBoxWhichSensor3.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxWhichSensor3.TabIndex = 23;
             // 
             // textBoxStatus
             // 
@@ -456,10 +516,11 @@
             "1",
             "2",
             "3"});
-            this.comboBoxWhichDataL.Location = new System.Drawing.Point(438, 68);
+            this.comboBoxWhichDataL.Location = new System.Drawing.Point(173, 165);
             this.comboBoxWhichDataL.Name = "comboBoxWhichDataL";
             this.comboBoxWhichDataL.Size = new System.Drawing.Size(100, 20);
             this.comboBoxWhichDataL.TabIndex = 19;
+            this.comboBoxWhichDataL.Visible = false;
             // 
             // label9
             // 
@@ -507,10 +568,11 @@
             "29",
             "30",
             "31"});
-            this.comboBoxWitchDataH.Location = new System.Drawing.Point(438, 42);
+            this.comboBoxWitchDataH.Location = new System.Drawing.Point(173, 139);
             this.comboBoxWitchDataH.Name = "comboBoxWitchDataH";
             this.comboBoxWitchDataH.Size = new System.Drawing.Size(100, 20);
             this.comboBoxWitchDataH.TabIndex = 17;
+            this.comboBoxWitchDataH.Visible = false;
             // 
             // textBoxRelayAddr
             // 
@@ -586,19 +648,21 @@
             // 
             // textBoxBaud
             // 
-            this.textBoxBaud.Location = new System.Drawing.Point(65, 101);
+            this.textBoxBaud.Location = new System.Drawing.Point(65, 151);
             this.textBoxBaud.Name = "textBoxBaud";
             this.textBoxBaud.Size = new System.Drawing.Size(100, 21);
             this.textBoxBaud.TabIndex = 10;
+            this.textBoxBaud.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 104);
+            this.label5.Location = new System.Drawing.Point(6, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 12);
             this.label5.TabIndex = 9;
             this.label5.Text = "滞环宽度";
+            this.label5.Visible = false;
             // 
             // textBoxLimitDown
             // 
@@ -792,20 +856,22 @@
         public System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Button buttonRead;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBoxWhichData4;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBoxWhichSensor4;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxWhichData2;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBoxWhichSensor2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxWhichData3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBoxData1Enable;
-        private System.Windows.Forms.CheckBox checkBoxData2Enable;
-        private System.Windows.Forms.CheckBox checkBoxData4Enable;
-        private System.Windows.Forms.CheckBox checkBoxData3Enable;
+        private System.Windows.Forms.ComboBox comboBoxWhichSensor3;
+        private System.Windows.Forms.CheckBox checkBoxDataON1;
+        private System.Windows.Forms.CheckBox checkBoxDataON2;
+        private System.Windows.Forms.CheckBox checkBoxDataON4;
+        private System.Windows.Forms.CheckBox checkBoxDataON3;
+        private System.Windows.Forms.ComboBox comboBoxWhichData1;
+        private System.Windows.Forms.ComboBox comboBoxWhichSensor1;
     }
 }

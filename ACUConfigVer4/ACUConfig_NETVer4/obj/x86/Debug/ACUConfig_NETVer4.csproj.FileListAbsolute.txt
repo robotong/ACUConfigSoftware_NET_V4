@@ -1,6 +1,4 @@
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\bin\Debug\ACUConfig_NETVer4.exe
-F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\bin\Debug\ACUConfig_NETVer4.pdb
-F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.csprojResolveAssemblyReference.cache
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.Form1.resources
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.FormDeviceManagement.resources
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.FormEditDevice.resources
@@ -10,3 +8,5 @@ F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.csproj.GenerateResource.Cache
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.exe
 F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.pdb
+F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\bin\Debug\ACUConfig_NETVer4.pdb
+F:\MyProject_github\ACU\ACU_NET\ACUConfigSoftware_NET_V4\ACUConfigVer4\ACUConfig_NETVer4\obj\x86\Debug\ACUConfig_NETVer4.csprojResolveAssemblyReference.cache
